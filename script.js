@@ -84,6 +84,10 @@
     }, 1000);
   }, 4000);
 
+const canvas = document.getElementById("playerCanvas");
+canvas.tabIndex = 0;  // make focusable
+canvas.focus();       // immediately grab keyboard focus
+  
   // --- Countdown for Game Start ---
   const countdownOverlay = document.getElementById("countdownOverlay");
   function startCountdown() {
