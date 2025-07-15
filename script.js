@@ -83,10 +83,6 @@
       startCountdown();
     }, 1000);
   }, 4000);
-
-const canvas = document.getElementById("playerCanvas");
-canvas.tabIndex = 0;  // make focusable
-canvas.focus();       // immediately grab keyboard focus
   
   // --- Countdown for Game Start ---
   const countdownOverlay = document.getElementById("countdownOverlay");
@@ -108,6 +104,10 @@ canvas.focus();       // immediately grab keyboard focus
     }, 1000);
   }
 
+const canvas = document.getElementById("playerCanvas");
+canvas.tabIndex = 0;  // make focusable
+canvas.focus();       // immediately grab keyboard focus
+  
   // --- Tetris Logic (Shapes, Colors, Heuristics, Board Class) ---
   const SHAPES = {
     I: [[[1, 1, 1, 1]], [[1], [1], [1], [1]]],
